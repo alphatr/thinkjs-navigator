@@ -1,0 +1,23 @@
+{
+    "name": "ThinkJS-Navigator",
+    "version": "1.0.0",
+    "description": "ThinkJS 分页组件",
+    "author": {
+        "name": "AlphaTr",
+        "email": "trefoiles@gmail.com",
+        "url": "http://blog.alphatr.com/"
+    },
+    "main": "Navigator.js",
+    "keywords": [
+        "ThinkJS",
+        "Navigator",
+        "js"
+    ],
+    "homepage": "https://github.com/AlphaTr/thinkjs-navigator",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlphaTr/thinkjs-navigator.git"
+    },
+    "author": "AlphaTr",
+    "license": "MIT"
+}
