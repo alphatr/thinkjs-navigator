@@ -1,6 +1,6 @@
 {
-    "name": "ThinkJS-Navigator",
-    "version": "1.0.0",
+    "name": "thinkjs-navigator",
+    "version": "1.0.1",
     "description": "ThinkJS 分页组件",
     "author": {
         "name": "AlphaTr",
