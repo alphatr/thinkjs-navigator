@@ -67,7 +67,8 @@ Navigator.prototype.render = function (prev, next, split, splitText, config) {
         urlRouter = function (tpl, page) {
             var url = self._baseUrl;
             if (page !== 1) {
-                url += '?page=' + page;
+                url += /\?/.test(url) ? '&' : '?';
+                url += 'page=' + page;
             }
             return tpl.replace(/\%s/ig, url);
         };
