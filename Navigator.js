@@ -65,7 +65,20 @@ Navigator.prototype.render = function (prev, next, split, splitText, config) {
         html = [], i,
 
         urlRouter = function (tpl, page) {
-            var url = self._baseUrl;
+            var url = self._baseUrl.replace(/([\?\&])(page\=\d+)(\&?)/i, function () {
+                if (arguments[3]) {
+                    return arguments[1];
+                }
+                return '';
+            });
+
+            if (/\#/.test(url)) {
+                this.anchor(url.replace(/^([^#]+)#/i, function () {
+                    url = arguments[1];
+                    return '';
+                }));
+            }
+
             if (page !== 1) {
                 url += /\?/.test(url) ? '&' : '?';
                 url += 'page=' + page;
